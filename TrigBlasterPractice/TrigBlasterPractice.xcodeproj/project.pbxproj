@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		844E01AA1BDF6DD500A38E17 /* MotherShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E01A91BDF6DD500A38E17 /* MotherShip.swift */; settings = {ASSET_TAGS = (); }; };
+		844E01AC1BDF6FED00A38E17 /* PhysicsCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E01AB1BDF6FED00A38E17 /* PhysicsCategories.swift */; settings = {ASSET_TAGS = (); }; };
+		84635D2D1BE205A2008A6AFB /* MotherShipBullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84635D2C1BE205A1008A6AFB /* MotherShipBullet.swift */; settings = {ASSET_TAGS = (); }; };
+		84635D2F1BE21A4D008A6AFB /* EnemyAircraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84635D2E1BE21A4D008A6AFB /* EnemyAircraft.swift */; settings = {ASSET_TAGS = (); }; };
+		8463B7011BDA111F00F279EC /* BasicMath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463B7001BDA111F00F279EC /* BasicMath.swift */; settings = {ASSET_TAGS = (); }; };
+		8463B7031BDA2EEF00F279EC /* Vendors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463B7021BDA2EEF00F279EC /* Vendors.swift */; settings = {ASSET_TAGS = (); }; };
+		848CFFEA1C11381200771BFD /* GameOverPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848CFFE91C11381200771BFD /* GameOverPopup.swift */; settings = {ASSET_TAGS = (); }; };
+		8490168E1BCCF3820007E7E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490168D1BCCF3820007E7E1 /* AppDelegate.swift */; };
+		849016901BCCF3820007E7E1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8490168F1BCCF3820007E7E1 /* GameScene.sks */; };
+		849016921BCCF3820007E7E1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849016911BCCF3820007E7E1 /* GameScene.swift */; };
+		849016941BCCF3820007E7E1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849016931BCCF3820007E7E1 /* GameViewController.swift */; };
+		849016971BCCF3820007E7E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849016951BCCF3820007E7E1 /* Main.storyboard */; };
+		849016991BCCF3820007E7E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849016981BCCF3820007E7E1 /* Assets.xcassets */; };
+		8490169C1BCCF3820007E7E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8490169A1BCCF3820007E7E1 /* LaunchScreen.storyboard */; };
+		849016A71BCCF3820007E7E1 /* TrigBlasterPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849016A61BCCF3820007E7E1 /* TrigBlasterPracticeTests.swift */; };
+		849016B21BCCF3820007E7E1 /* TrigBlasterPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849016B11BCCF3820007E7E1 /* TrigBlasterPracticeUITests.swift */; };
+		849016C31BCCF3CB0007E7E1 /* Collision.wav in Resources */ = {isa = PBXBuildFile; fileRef = 849016C01BCCF3CB0007E7E1 /* Collision.wav */; settings = {ASSET_TAGS = (); }; };
+		849016C41BCCF3CB0007E7E1 /* Hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 849016C11BCCF3CB0007E7E1 /* Hit.wav */; settings = {ASSET_TAGS = (); }; };
+		849016C51BCCF3CB0007E7E1 /* Shoot.wav in Resources */ = {isa = PBXBuildFile; fileRef = 849016C21BCCF3CB0007E7E1 /* Shoot.wav */; settings = {ASSET_TAGS = (); }; };
+		84BFFE221BE314910046D166 /* Aerolite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BFFE211BE314910046D166 /* Aerolite.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		849016A31BCCF3820007E7E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 849016821BCCF3820007E7E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 849016891BCCF3820007E7E1;
+			remoteInfo = TrigBlasterPractice;
+		};
+		849016AE1BCCF3820007E7E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 849016821BCCF3820007E7E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 849016891BCCF3820007E7E1;
+			remoteInfo = TrigBlasterPractice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		844E01A91BDF6DD500A38E17 /* MotherShip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotherShip.swift; sourceTree = "<group>"; };
+		844E01AB1BDF6FED00A38E17 /* PhysicsCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsCategories.swift; sourceTree = "<group>"; };
+		84635D2C1BE205A1008A6AFB /* MotherShipBullet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotherShipBullet.swift; sourceTree = "<group>"; };
+		84635D2E1BE21A4D008A6AFB /* EnemyAircraft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyAircraft.swift; sourceTree = "<group>"; };
+		8463B7001BDA111F00F279EC /* BasicMath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicMath.swift; sourceTree = "<group>"; };
+		8463B7021BDA2EEF00F279EC /* Vendors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vendors.swift; sourceTree = "<group>"; };
+		848CFFE91C11381200771BFD /* GameOverPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverPopup.swift; sourceTree = "<group>"; };
+		8490168A1BCCF3820007E7E1 /* TrigBlasterPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrigBlasterPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8490168D1BCCF3820007E7E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8490168F1BCCF3820007E7E1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		849016911BCCF3820007E7E1 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		849016931BCCF3820007E7E1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		849016961BCCF3820007E7E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		849016981BCCF3820007E7E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8490169B1BCCF3820007E7E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8490169D1BCCF3820007E7E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849016A21BCCF3820007E7E1 /* TrigBlasterPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrigBlasterPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		849016A61BCCF3820007E7E1 /* TrigBlasterPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrigBlasterPracticeTests.swift; sourceTree = "<group>"; };
+		849016A81BCCF3820007E7E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849016AD1BCCF3820007E7E1 /* TrigBlasterPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrigBlasterPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		849016B11BCCF3820007E7E1 /* TrigBlasterPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrigBlasterPracticeUITests.swift; sourceTree = "<group>"; };
+		849016B31BCCF3820007E7E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849016C01BCCF3CB0007E7E1 /* Collision.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Collision.wav; sourceTree = "<group>"; };
+		849016C11BCCF3CB0007E7E1 /* Hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hit.wav; sourceTree = "<group>"; };
+		849016C21BCCF3CB0007E7E1 /* Shoot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Shoot.wav; sourceTree = "<group>"; };
+		84BFFE211BE314910046D166 /* Aerolite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aerolite.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		849016871BCCF3820007E7E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8490169F1BCCF3820007E7E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849016AA1BCCF3820007E7E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		844E01A81BDF6DAF00A38E17 /* SpriteNodes */ = {
+			isa = PBXGroup;
+			children = (
+				844E01A91BDF6DD500A38E17 /* MotherShip.swift */,
+				844E01AB1BDF6FED00A38E17 /* PhysicsCategories.swift */,
+				84635D2C1BE205A1008A6AFB /* MotherShipBullet.swift */,
+				84635D2E1BE21A4D008A6AFB /* EnemyAircraft.swift */,
+				84BFFE211BE314910046D166 /* Aerolite.swift */,
+			);
+			path = SpriteNodes;
+			sourceTree = "<group>";
+		};
+		8464FD571C0FF0C800855BED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				848CFFE91C11381200771BFD /* GameOverPopup.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		849016811BCCF3820007E7E1 = {
+			isa = PBXGroup;
+			children = (
+				8490168C1BCCF3820007E7E1 /* TrigBlasterPractice */,
+				849016A51BCCF3820007E7E1 /* TrigBlasterPracticeTests */,
+				849016B01BCCF3820007E7E1 /* TrigBlasterPracticeUITests */,
+				8490168B1BCCF3820007E7E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8490168B1BCCF3820007E7E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8490168A1BCCF3820007E7E1 /* TrigBlasterPractice.app */,
+				849016A21BCCF3820007E7E1 /* TrigBlasterPracticeTests.xctest */,
+				849016AD1BCCF3820007E7E1 /* TrigBlasterPracticeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8490168C1BCCF3820007E7E1 /* TrigBlasterPractice */ = {
+			isa = PBXGroup;
+			children = (
+				8464FD571C0FF0C800855BED /* Views */,
+				844E01A81BDF6DAF00A38E17 /* SpriteNodes */,
+				849016BF1BCCF3CB0007E7E1 /* Sounds */,
+				8490168D1BCCF3820007E7E1 /* AppDelegate.swift */,
+				8490168F1BCCF3820007E7E1 /* GameScene.sks */,
+				849016911BCCF3820007E7E1 /* GameScene.swift */,
+				849016931BCCF3820007E7E1 /* GameViewController.swift */,
+				849016951BCCF3820007E7E1 /* Main.storyboard */,
+				849016981BCCF3820007E7E1 /* Assets.xcassets */,
+				8490169A1BCCF3820007E7E1 /* LaunchScreen.storyboard */,
+				8490169D1BCCF3820007E7E1 /* Info.plist */,
+				8463B7001BDA111F00F279EC /* BasicMath.swift */,
+				8463B7021BDA2EEF00F279EC /* Vendors.swift */,
+			);
+			path = TrigBlasterPractice;
+			sourceTree = "<group>";
+		};
+		849016A51BCCF3820007E7E1 /* TrigBlasterPracticeTests */ = {
+			isa = PBXGroup;
+			children = (
+				849016A61BCCF3820007E7E1 /* TrigBlasterPracticeTests.swift */,
+				849016A81BCCF3820007E7E1 /* Info.plist */,
+			);
+			path = TrigBlasterPracticeTests;
+			sourceTree = "<group>";
+		};
+		849016B01BCCF3820007E7E1 /* TrigBlasterPracticeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				849016B11BCCF3820007E7E1 /* TrigBlasterPracticeUITests.swift */,
+				849016B31BCCF3820007E7E1 /* Info.plist */,
+			);
+			path = TrigBlasterPracticeUITests;
+			sourceTree = "<group>";
+		};
+		849016BF1BCCF3CB0007E7E1 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				849016C01BCCF3CB0007E7E1 /* Collision.wav */,
+				849016C11BCCF3CB0007E7E1 /* Hit.wav */,
+				849016C21BCCF3CB0007E7E1 /* Shoot.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		849016891BCCF3820007E7E1 /* TrigBlasterPractice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849016B61BCCF3820007E7E1 /* Build configuration list for PBXNativeTarget "TrigBlasterPractice" */;
+			buildPhases = (
+				849016861BCCF3820007E7E1 /* Sources */,
+				849016871BCCF3820007E7E1 /* Frameworks */,
+				849016881BCCF3820007E7E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrigBlasterPractice;
+			productName = TrigBlasterPractice;
+			productReference = 8490168A1BCCF3820007E7E1 /* TrigBlasterPractice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		849016A11BCCF3820007E7E1 /* TrigBlasterPracticeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849016B91BCCF3820007E7E1 /* Build configuration list for PBXNativeTarget "TrigBlasterPracticeTests" */;
+			buildPhases = (
+				8490169E1BCCF3820007E7E1 /* Sources */,
+				8490169F1BCCF3820007E7E1 /* Frameworks */,
+				849016A01BCCF3820007E7E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				849016A41BCCF3820007E7E1 /* PBXTargetDependency */,
+			);
+			name = TrigBlasterPracticeTests;
+			productName = TrigBlasterPracticeTests;
+			productReference = 849016A21BCCF3820007E7E1 /* TrigBlasterPracticeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		849016AC1BCCF3820007E7E1 /* TrigBlasterPracticeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849016BC1BCCF3820007E7E1 /* Build configuration list for PBXNativeTarget "TrigBlasterPracticeUITests" */;
+			buildPhases = (
+				849016A91BCCF3820007E7E1 /* Sources */,
+				849016AA1BCCF3820007E7E1 /* Frameworks */,
+				849016AB1BCCF3820007E7E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				849016AF1BCCF3820007E7E1 /* PBXTargetDependency */,
+			);
+			name = TrigBlasterPracticeUITests;
+			productName = TrigBlasterPracticeUITests;
+			productReference = 849016AD1BCCF3820007E7E1 /* TrigBlasterPracticeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		849016821BCCF3820007E7E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Admin;
+				TargetAttributes = {
+					849016891BCCF3820007E7E1 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					849016A11BCCF3820007E7E1 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 849016891BCCF3820007E7E1;
+					};
+					849016AC1BCCF3820007E7E1 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 849016891BCCF3820007E7E1;
+					};
+				};
+			};
+			buildConfigurationList = 849016851BCCF3820007E7E1 /* Build configuration list for PBXProject "TrigBlasterPractice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 849016811BCCF3820007E7E1;
+			productRefGroup = 8490168B1BCCF3820007E7E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				849016891BCCF3820007E7E1 /* TrigBlasterPractice */,
+				849016A11BCCF3820007E7E1 /* TrigBlasterPracticeTests */,
+				849016AC1BCCF3820007E7E1 /* TrigBlasterPracticeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		849016881BCCF3820007E7E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849016C41BCCF3CB0007E7E1 /* Hit.wav in Resources */,
+				849016901BCCF3820007E7E1 /* GameScene.sks in Resources */,
+				8490169C1BCCF3820007E7E1 /* LaunchScreen.storyboard in Resources */,
+				849016C31BCCF3CB0007E7E1 /* Collision.wav in Resources */,
+				849016991BCCF3820007E7E1 /* Assets.xcassets in Resources */,
+				849016C51BCCF3CB0007E7E1 /* Shoot.wav in Resources */,
+				849016971BCCF3820007E7E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849016A01BCCF3820007E7E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849016AB1BCCF3820007E7E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		849016861BCCF3820007E7E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				844E01AA1BDF6DD500A38E17 /* MotherShip.swift in Sources */,
+				8463B7031BDA2EEF00F279EC /* Vendors.swift in Sources */,
+				84BFFE221BE314910046D166 /* Aerolite.swift in Sources */,
+				849016921BCCF3820007E7E1 /* GameScene.swift in Sources */,
+				848CFFEA1C11381200771BFD /* GameOverPopup.swift in Sources */,
+				849016941BCCF3820007E7E1 /* GameViewController.swift in Sources */,
+				84635D2D1BE205A2008A6AFB /* MotherShipBullet.swift in Sources */,
+				844E01AC1BDF6FED00A38E17 /* PhysicsCategories.swift in Sources */,
+				84635D2F1BE21A4D008A6AFB /* EnemyAircraft.swift in Sources */,
+				8463B7011BDA111F00F279EC /* BasicMath.swift in Sources */,
+				8490168E1BCCF3820007E7E1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8490169E1BCCF3820007E7E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849016A71BCCF3820007E7E1 /* TrigBlasterPracticeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849016A91BCCF3820007E7E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849016B21BCCF3820007E7E1 /* TrigBlasterPracticeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		849016A41BCCF3820007E7E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 849016891BCCF3820007E7E1 /* TrigBlasterPractice */;
+			targetProxy = 849016A31BCCF3820007E7E1 /* PBXContainerItemProxy */;
+		};
+		849016AF1BCCF3820007E7E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 849016891BCCF3820007E7E1 /* TrigBlasterPractice */;
+			targetProxy = 849016AE1BCCF3820007E7E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		849016951BCCF3820007E7E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				849016961BCCF3820007E7E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8490169A1BCCF3820007E7E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8490169B1BCCF3820007E7E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		849016B41BCCF3820007E7E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		849016B51BCCF3820007E7E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		849016B71BCCF3820007E7E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TrigBlasterPractice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoan.animtest.TrigBlasterPractice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		849016B81BCCF3820007E7E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TrigBlasterPractice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoan.animtest.TrigBlasterPractice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		849016BA1BCCF3820007E7E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = TrigBlasterPracticeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoan.animtest.TrigBlasterPracticeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrigBlasterPractice.app/TrigBlasterPractice";
+			};
+			name = Debug;
+		};
+		849016BB1BCCF3820007E7E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TrigBlasterPracticeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoan.animtest.TrigBlasterPracticeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrigBlasterPractice.app/TrigBlasterPractice";
+			};
+			name = Release;
+		};
+		849016BD1BCCF3820007E7E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = TrigBlasterPracticeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoan.animtest.TrigBlasterPracticeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TrigBlasterPractice;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		849016BE1BCCF3820007E7E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TrigBlasterPracticeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoan.animtest.TrigBlasterPracticeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TrigBlasterPractice;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		849016851BCCF3820007E7E1 /* Build configuration list for PBXProject "TrigBlasterPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849016B41BCCF3820007E7E1 /* Debug */,
+				849016B51BCCF3820007E7E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		849016B61BCCF3820007E7E1 /* Build configuration list for PBXNativeTarget "TrigBlasterPractice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849016B71BCCF3820007E7E1 /* Debug */,
+				849016B81BCCF3820007E7E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		849016B91BCCF3820007E7E1 /* Build configuration list for PBXNativeTarget "TrigBlasterPracticeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849016BA1BCCF3820007E7E1 /* Debug */,
+				849016BB1BCCF3820007E7E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		849016BC1BCCF3820007E7E1 /* Build configuration list for PBXNativeTarget "TrigBlasterPracticeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849016BD1BCCF3820007E7E1 /* Debug */,
+				849016BE1BCCF3820007E7E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 849016821BCCF3820007E7E1 /* Project object */;
+}
