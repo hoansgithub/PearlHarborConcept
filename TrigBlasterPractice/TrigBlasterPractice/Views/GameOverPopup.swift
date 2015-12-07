@@ -8,9 +8,18 @@
 
 import SpriteKit
 
+protocol GameOverPopupDelegate {
+
+    func didTouchRestartGame(popup:SKSpriteNode)
+    func didTouchBackMenu(popup:SKSpriteNode)
+}
+
 class GameOverPopup: SKSpriteNode {
-    private(set) var score:Int;
+    
+    var delegate:GameOverPopupDelegate?
+    private(set) var score:Int
     private let lblScoreName = "lblScoreName"
+    private let lblBackHome = "lblBackHome"
     init(size: CGSize , score: Int) {
         self.score = score
         super.init(texture: nil, color: UIColor(red: 121/255, green: 146/255, blue: 248/255, alpha: 0.5), size: size)
@@ -21,14 +30,22 @@ class GameOverPopup: SKSpriteNode {
         //lbl score
         let labelScore = SKLabelNode(text: String(score))
         //anchor point of parent will be point 0 of child
-        labelScore.position = CGPoint(x: 0, y: 0)
+        labelScore.position = CGPoint(x: 0, y: size.height / 4)
         labelScore.fontColor = UIColor.redColor()
         labelScore.color = UIColor.blueColor()
         labelScore.name = lblScoreName
         labelScore.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.Center
         self.addChild(labelScore)
         
-        //btn
+        //lbl home
+        let labelHome = SKLabelNode(text: "HOME")
+        //anchor point of parent will be point 0 of child
+        labelHome.position = CGPoint(x: 0, y: -(size.height / 4))
+        labelHome.fontColor = UIColor.redColor()
+        labelHome.color = UIColor.blueColor()
+        labelHome.name = lblBackHome
+        labelHome.horizontalAlignmentMode = SKLabelHorizontalAlignmentMode.Center
+        self.addChild(labelHome)
         
         
     }
@@ -42,9 +59,11 @@ class GameOverPopup: SKSpriteNode {
             if let nodeName = node.name {
                 switch (nodeName) {
                 case lblScoreName:
-                    self.removeFromParent()
+                    self.delegate?.didTouchRestartGame(self)
                     break
-                    
+                case lblBackHome:
+                    self.delegate?.didTouchBackMenu(self)
+                    break
                 default:break
                 }
             }

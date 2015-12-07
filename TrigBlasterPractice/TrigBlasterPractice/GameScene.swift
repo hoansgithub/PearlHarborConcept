@@ -9,12 +9,7 @@
 import SpriteKit
 
 
-
-
-
-
-
-class GameScene: SKScene, SKPhysicsContactDelegate {
+class GameScene: SKScene, SKPhysicsContactDelegate, GameOverPopupDelegate {
     
     //node names
     let btnPauseName = "pauseBtn"
@@ -25,11 +20,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var lastEnemySpawnTimeInterval:CFTimeInterval = 0
     var lastFrameUpdateTimeInterval:CFTimeInterval = 0
 //    var motherShipStartingHead:CGPoint = CGPoint()
-    let motherShip = MotherShip()
-    
+    var motherShip = MotherShip()
     
     var btnPause  = SKSpriteNode()
     var btnResume = SKSpriteNode()
+    
     
     
     override func didMoveToView(view: SKView) {
@@ -39,6 +34,23 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         physicsWorld.gravity = CGVectorMake(0, 0)
         physicsWorld.contactDelegate = self
         view.allowsTransparency = true
+        
+        //contents
+        self.createGameContents()
+
+        
+    }
+    
+    func createGameContents() {
+    
+        //mothership 
+        
+        self.motherShip = MotherShip()
+        motherShip.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
+        motherShip.zPosition = -1;
+        
+        addChild(motherShip)
+        
         //btnPause + resume
         btnPause = SKSpriteNode(imageNamed: btnPauseName)
         btnPause.position = CGPoint(x: btnPause.size.width / 2 + size.width / 50, y: size.height - btnPause.size.height / 2 - size.height / 50)
@@ -50,14 +62,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         btnResume.name = btnResumeName
         btnResume.zPosition = 10
         
-        //mothership position
-        motherShip.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
-        motherShip.zPosition = -1;
-
-        addChild(motherShip)
-
+        
         //pause game
-        self.pauseGame()
+        self.resumeGame()
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -87,6 +94,14 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     //game's actions
+    
+    func restart() {
+    
+        self.removeAllChildren();
+        self.removeAllActions();
+        self.createGameContents();
+    }
+    
     func pauseGame() {
         self.btnPause.removeFromParent()
         self.addChild(self.btnResume)
@@ -105,17 +120,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 //            self.scene?.paused = false
 //        })
     }
+    
     func didTouchToScreen(location:CGPoint) {
         if (self.scene?.paused == true) {
         return
         }
         motherShip.fireAtPoint(location)
-    }
-    
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        /* Called when a touch begins */
-                
-        
     }
     
     func spawnAerolite() {
@@ -320,11 +330,28 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
                     
                     let gop = GameOverPopup(size: self.size, score: 100)
+                    gop.delegate = self
                     self.addChild(gop)
                 }
                 ]))
             
         }
+    }
+    
+    
+    // MARK:  GameOverPopupDelegate
+    func didTouchRestartGame(popup: SKSpriteNode) {
+        popup.removeFromParent()
+        self.restart()
+    }
+    
+    func didTouchBackMenu(popup: SKSpriteNode) {
+        popup.removeFromParent()
+        let reveal = SKTransition.fadeWithDuration(1);
+        
+        let scene = GameMenuScene(size: self.view!.bounds.size)
+        scene.scaleMode = .ResizeFill;
+        self.view?.presentScene(scene, transition: reveal)
     }
     
     
